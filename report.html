@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="add-movies.css" >
+    <link rel="stylesheet" href="report.css">
+    <title>Report</title>
+</head>
+<body>
+    <div class="header">
+        <h1 class="logo">SETFLIX</h1>
+        <div class="nav">
+            <a href="index.html">Home</a>
+            <a href="add-movies.html">Add Movies</a>
+            <a href="report.html">Report</a>
+            <p class="user-batch" id="user-batch"></p>
+        </div>
+    </div>
+    <div class="category-container">
+        <label for="select-category">Genre</label>
+        <select id="select-category" class="select-category">
+            <option value="" disabled selected>Select Genre</option>
+            <option value="Action">Action</option>
+            <option value="Animated">Animated</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Adult">Adult</option>
+            <option value="Comedy">Comedy</option>
+            <option value="Crime">Crime</option>
+            <option value="Drama">Drama</option>
+            <option value="Romance">Romance</option>
+            <option value="Thriller">Thriller</option>
+            <option value="Science Fiction">Sci-fi</option>
+        </select>
+    </div>
+
+    <div class="stats-container">
+        <div class="stat-container">
+            <p class="stat-name">Total Watchtime (in mins)</p>
+            <p class="stat-value" id="total-watch-time"></p>
+        </div>
+        <div class="stat-container">
+            <p class="stat-name">Average Rating</p>
+            <p class="stat-value" id="average-rating"></p>
+        </div>
+    </div>
+    
+    <div class="movie-list-container">
+        <p>List of Movies Watched</p>
+        <table class="movie-table">
+            <thead id="table-head"></thead>
+            <tbody id="table-body"></tbody>
+        </table>
+    </div>
+
+    <script src="report.js"></script>
+</body>
+</html>
