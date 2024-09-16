@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', ()=>{
                 <input type="date" id="watch-date" class="input-field" required min="1950-01-01" max="2025-12-31">
             </div>
             <div class="form-row">
-                <label for="movie-duration">Enter the Duration of Movie (in mins)</label>
+                <label for="movie-duration">Enter the Duration of Movie (in minutes*)</label>
                 <input type="number" id="movie-duration" class="input-field" required>
             </div>
             <div class="form-row">
